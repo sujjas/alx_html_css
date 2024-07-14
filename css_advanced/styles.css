@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/Object.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 150px;
+
+}
+
+header nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 53px;
+
+}
+
+header nav ul li{
+   font-size: 12px;
+   
+}
+
+nav ul li a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Example font weight */
+    font-size: 12px; /* Example font size */
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+main section{
+    width: 100%;
+    height: auto;
+}
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 200px 0px;
+}
+
+.hero h1{
+  font-size: 120px; 
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  color: white; 
+}
+
+.sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: white;
+}
+ 
+.hero button{
+    outline: none;
+    color: white;
+    background-color: #C271FF;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+.learn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.learn h2{
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.section-title{
+    color: white;
+    font-weight: 300;
+}
+
+.first-word{
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.testimonials{
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+.pros{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    margin-top: 10px;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.member-info p {
+    margin: 0;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 24px; /* Adjust line height for readability */
+    font-style: italic;
+}
+
+
+.testimony{
+    background-color: #C271FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 100px 30px;
+}
+
+.testimony img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.quote blockquote{
+    font-weight: 300;
+}
+
+.quote p{
+    font-style: italic;
+    font-weight: 200;
+}
+
+.popular{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    padding: 100px 0px;
+}
+
+.popular h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.popular h2 span{
+    color: #C271FF;
+    font-weight: 700;
+}
+
+.smile-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    color: #C271FF;
+}
+
+.stars img{
+    width: 255px;
+    height: 154px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.smile-images p{
+    word-wrap: break-word;
+    font-size: 14px;
+    color: #b9b8b8;
+    font-weight: 400;
+}
+
+.smile-images h3{
+    font-size: 16px;
+}
+
+
+.Phillip{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.popular-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.popular-image h4{
+    font-weight: 400;
+    color: #C271FF;
+}
+
+.popular-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 10px;
+}
+
+.star-time{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star-time p{
+    color: #C271FF;
+}
+
+.membership{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+    text-align: center;
+    padding: 100px 0px;
+    background-color: #071629;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    color: white;
+
+}
+
+.membership h2{
+    color: white;
+    font-weight: 300;
+}
+
+.Free{
+    color: #C271FF;
+    font-weight: 700;
+
+
+}
+.membership button{
+    outline: none;
+    color: white;
+    background-color: #C271FF;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
