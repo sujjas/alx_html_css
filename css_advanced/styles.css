@@ -429,3 +429,38 @@ main section{
     color: #071629;
     font-weight: 400;
 }
+
+.footer{
+    background-color: #071629;
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro'; 
+
+}
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 2rem;
+   color: white;
+   padding: 3rem 15rem;
+}
+
+.copyright{
+    opacity: 0.3;
+    font-family: 'Source Sans Pro'; 
+    font-size: 12px;
+}
+
+.footer-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
