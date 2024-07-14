@@ -369,3 +369,63 @@ main section{
     font-size: 14px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
+
+.FAQ{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.FAQ h2{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.two-div-sections{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+
+}
+
+.first-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+}
+
+.one{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 30px;
+}
+
+.one h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.one p{
+    font-size: 14px;
+    opacity: 0.5;
+    color: #071629;
+    font-weight: 400;
+}
