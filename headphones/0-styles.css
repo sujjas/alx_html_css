@@ -3,3 +3,248 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 200px;
+}
+
+.logo{
+    width: 161px;
+    height: 32px;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.nav-links{
+    width: 100%;
+    height: auto;
+}
+
+.nav-links ul{
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 41px;
+}
+
+.nav-links ul li{
+    font-size: 12px;
+}
+
+.nav-links ul li a{
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Example font weight */
+    font-size: 12px; /* Example font size */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-links ul li a:hover {
+    color: #FF6565; /* Change text color on hover */
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.hero-section{
+    width: 100%;
+    height: auto;
+    padding: 200px;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.upper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.upper-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+.upper-text h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.upper-text p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.upper button{
+    outline: none;
+    color: white;
+    background-color: #FF6565;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lower{
+    width: 100%;
+    height: auto;
+}
+
+.lower p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    content: '';
+    transition: all 0.3s;
+}
+
+.nav-toggle-label span::before {
+    top: -8px;
+}
+
+.nav-toggle-label span::after {
+    top: 8px;
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        background-image: url(./images/headphones_hero_1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 375px;
+        height: 869px;
+    }
+
+    .header{
+        width: 100%;
+        height: auto;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        column-gap: 66px;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 160.96px;
+        height: 31.18px;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        
+    }
+
+    .nav-links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label .span {
+        background: transparent;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
